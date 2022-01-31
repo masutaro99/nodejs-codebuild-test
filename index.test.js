@@ -8,9 +8,9 @@ test('returns Fizz when num is divisible by 3', () => {
   expect(fizzbuzz(6)).toBe('Fizz')
 })
 
-test('returns Buzz when num is divisible by 5', () => {
-  expect(fizzbuzz(10)).toBe('Buzz')
-})
+// test('returns Buzz when num is divisible by 5', () => {
+//   expect(fizzbuzz(10)).toBe('Buzz')
+// })
 
 test('returns the number when num is not divisible by 3 or 5', () => {
   expect(fizzbuzz(4)).toBe('4')
