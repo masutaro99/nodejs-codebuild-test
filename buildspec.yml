@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 12.x
+      nodejs: 12.22.2
   pre_build:
     commands:
       - node -v
@@ -15,9 +15,9 @@ phases:
 reports:
   jest_reports:
     files:
-      - reports
+      - test-result.xml
     file-format: JUNITXML
-    base-directory: test-result.xml
+    base-directory: reports
   coverage-report:
     files:
       - 'coverage/clover.xml'
