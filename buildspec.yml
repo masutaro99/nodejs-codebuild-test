@@ -23,3 +23,7 @@ reports:
     files:
       - 'coverage/clover.xml'
     file-format: 'CLOVERXML'
+
+cache:
+  paths:
+    - '/root/.npm/**/*'
