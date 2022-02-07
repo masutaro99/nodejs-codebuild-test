@@ -6,15 +6,14 @@ phases:
       nodejs: 12
   pre_build:
     commands:
-      - node -v
-      - echo $(npm config get cache)
+      # - echo $(npm config get cache)
       - npm ci
   build:
     commands:
       - npm test
 
 reports:
-  jest_reports:
+  jest-reports:
     files:
       - test-result.xml
     file-format: JUNITXML
@@ -24,6 +23,6 @@ reports:
       - 'coverage/clover.xml'
     file-format: 'CLOVERXML'
 
-cache:
-  paths:
-    - '/root/.npm/**/*'
+# cache:
+#   paths:
+#     - '/root/.npm/**/*'
