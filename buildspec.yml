@@ -10,6 +10,8 @@ phases:
       - npm ci
   build:
     commands:
+      - echo "Hello World" > /tmp/hello-world
+      - codebuild-breakpoint
       - npm test
 
 reports:
